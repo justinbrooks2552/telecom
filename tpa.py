@@ -84,12 +84,12 @@ clf.fit(X_train, y_train)
 
 
 
-image_path = 'logo.jpg'  # Replace with your image file path
+logo_url = "https://github.com/justinbrooks2552/telecom/raw/main/Logo.JPG"
 
 col1, col2, col3 = st.columns([1,2,1])
 
 with col2: 
-    st.image('logo.jpg')
+    st.image(logo_url, use_container_width=True)
 
 
 st.markdown(
