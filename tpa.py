@@ -81,24 +81,23 @@ clf.fit(X_train, y_train)
 
 
 
-# URL of the image
-image_url = 'https://github.com/justinbrooks2552/telecom/blob/main/Logo.JPG'
-
-# Define the layout with three columns
-col1, col2, col3 = st.columns([1,2,1])
-
-# Display the image in the middle column
-with col2:
-    st.image(image_url)  # Display the image using the URL
-
-
-
-# image_path = 'logo.jpg'  # Replace with your image file path
-
+# # URL of the image
+# image_url = 'https://github.com/justinbrooks2552/telecom/blob/main/Logo.JPG'
+# # Define the layout with three columns
 # col1, col2, col3 = st.columns([1,2,1])
 
-# with col2: 
-#     st.image('logo.jpg')
+# # Display the image in the middle column
+# with col2:
+#     st.image(image_url)  # Display the image using the URL
+
+
+
+image_path = 'Logo.jpg'  # Replace with your image file path
+
+col1, col2, col3 = st.columns([1,2,1])
+
+with col2: 
+    st.image('Logo.jpg')
 
 
 st.markdown(
