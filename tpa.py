@@ -78,18 +78,27 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 clf = RandomForestClassifier(random_state=3125)
 clf.fit(X_train, y_train)
 
-# # Uses the trained classifier to make predictions on the test set.
-# y_pred = clf.predict(X_test)
 
 
 
+# URL of the image
+image_url = 'https://github.com/justinbrooks2552/telecom/blob/main/Logo.JPG'
 
-logo_url = "https://github.com/justinbrooks2552/telecom/raw/main/Logo.JPG"
-
+# Define the layout with three columns
 col1, col2, col3 = st.columns([1,2,1])
 
-with col2: 
-    st.image(logo_url, use_container_width=True)
+# Display the image in the middle column
+with col2:
+    st.image(image_url)  # Display the image using the URL
+
+
+
+# image_path = 'logo.jpg'  # Replace with your image file path
+
+# col1, col2, col3 = st.columns([1,2,1])
+
+# with col2: 
+#     st.image('logo.jpg')
 
 
 st.markdown(
